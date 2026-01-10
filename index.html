@@ -4,192 +4,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>UNIFY - Educational Meeting Platform</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
 </head>
 
 <body>
-    <div class="main-header">
-        <div class="header">
-            <div class="low-header">
-                <a href="index.html" class="header-a"> UNIFY </a>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">UNIFY</a>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="scroll-link">HOME</a></li>
+                    <li><a href="#meetings" class="scroll-link">MEETINGS</a></li>
+                    <li><a href="#courses" class="scroll-link">COURSES</a></li>
+                    <li><a href="#services" class="scroll-link">SERVICES</a></li>
+                    <li><a href="#contact" class="scroll-link">CONTACT</a></li>
+                    <li><a href="#apply" class="btn-apply">APPLY NOW</a></li>
+                </ul>
             </div>
-            <ul class="links">
-                <li class="scroll-to-section"><a href="#">HOME</a></li>
-                <li><a href="#">MEETING</a></li>
-                <li><a href="#">APPLY NOW</a></li>
-                <li><a href="#">PAGES</a></li>
-                <li><a href="#">COURSES</a></li>
-                <li><a href="#">CONTACT US</a></li>
-            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h4 class="hero-subtitle">HELLO!</h4>
+            <h1 class="hero-title">WELCOME TO UNIFY</h1>
+            <p class="hero-description">
+                Connect with educators, students, and professionals from around the world. 
+                Join our platform for seamless educational meetings and networking opportunities.
+            </p>
+            <button class="btn-primary" id="joinBtn">JOIN US NOW</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">OUR SERVICES</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/icons/service-icon-01.png" alt="Best Education">
+                    </div>
+                    <h3>Best Education</h3>
+                    <p>Access world-class educational content and expert instructors dedicated to your growth and success.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/icons/service-icon-02.png" alt="Online Meeting">
+                    </div>
+                    <h3>Online Meetings</h3>
+                    <p>Interactive video conferencing with advanced features for collaborative learning and real-time engagement.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/icons/service-icon-03.png" alt="Best Networking">
+                    </div>
+                    <h3>Best Networking</h3>
+                    <p>Connect with peers, mentors, and industry professionals to expand your network and opportunities.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/icons/service-icon-01.png" alt="Best Teachers">
+                    </div>
+                    <h3>Best Teachers</h3>
+                    <p>Learn from certified educators with years of experience in their respective fields.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/icons/service-icon-02.png" alt="Best Students">
+                    </div>
+                    <h3>Best Students</h3>
+                    <p>Join a community of motivated learners committed to academic excellence and personal development.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/icons/service-icon-03.png" alt="Flexible Schedule">
+                    </div>
+                    <h3>Flexible Schedule</h3>
+                    <p>Learn at your own pace with recorded sessions and flexible meeting times that suit your lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Meetings Section -->
+    <section class="upcoming-meetings" id="meetings">
+        <div class="container">
+            <h2 class="section-title">UPCOMING MEETINGS</h2>
+            <div class="meetings-grid" id="meetingsGrid">
+                <div class="meeting-card">
+                    <div class="meeting-image">
+                        <img src="assets/images/meetings/meeting-01.jpg" alt="Meeting 1">
+                        <span class="meeting-category">Technology</span>
+                    </div>
+                    <div class="meeting-content">
+                        <h3>Advanced Web Development Techniques</h3>
+                        <p class="meeting-date">📅 January 15, 2024 | 10:00 AM</p>
+                        <p class="meeting-instructor">👨‍🏫 Instructor: John Smith</p>
+                        <p>Learn cutting-edge web development technologies and best practices from industry experts.</p>
+                        <button class="btn-secondary">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="meeting-card">
+                    <div class="meeting-image">
+                        <img src="assets/images/meetings/meeting-02.jpg" alt="Meeting 2">
+                        <span class="meeting-category">Business</span>
+                    </div>
+                    <div class="meeting-content">
+                        <h3>Digital Marketing Strategy 2024</h3>
+                        <p class="meeting-date">📅 January 18, 2024 | 2:00 PM</p>
+                        <p class="meeting-instructor">👨‍🏫 Instructor: Sarah Johnson</p>
+                        <p>Master modern digital marketing strategies and grow your online presence effectively.</p>
+                        <button class="btn-secondary">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="meeting-card">
+                    <div class="meeting-image">
+                        <img src="assets/images/meetings/meeting-03.jpg" alt="Meeting 3">
+                        <span class="meeting-category">Design</span>
+                    </div>
+                    <div class="meeting-content">
+                        <h3>UI/UX Design Principles</h3>
+                        <p class="meeting-date">📅 January 22, 2024 | 3:30 PM</p>
+                        <p class="meeting-instructor">👨‍🏫 Instructor: Emily Davis</p>
+                        <p>Create beautiful and user-friendly designs that solve real problems and delight users.</p>
+                        <button class="btn-secondary">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="meeting-card">
+                    <div class="meeting-image">
+                        <img src="assets/images/meetings/meeting-04.jpg" alt="Meeting 4">
+                        <span class="meeting-category">Data Science</span>
+                    </div>
+                    <div class="meeting-content">
+                        <h3>Machine Learning Fundamentals</h3>
+                        <p class="meeting-date">📅 January 25, 2024 | 4:00 PM</p>
+                        <p class="meeting-instructor">👨‍🏫 Instructor: Michael Chen</p>
+                        <p>Explore machine learning concepts and build intelligent systems with practical examples.</p>
+                        <button class="btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">FEATURED COURSES</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="assets/images/courses/course-01.jpg" alt="Course 1">
+                    </div>
+                    <div class="course-content">
+                        <h3>Full Stack Development</h3>
+                        <div class="course-meta">
+                            <span class="course-level">Intermediate</span>
+                            <span class="course-duration">8 Weeks</span>
+                        </div>
+                        <p>Master both frontend and backend development with modern technologies.</p>
+                        <div class="course-footer">
+                            <span class="course-price">$99</span>
+                            <button class="btn-secondary">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="assets/images/courses/course-02.jpg" alt="Course 2">
+                    </div>
+                    <div class="course-content">
+                        <h3>Mobile App Development</h3>
+                        <div class="course-meta">
+                            <span class="course-level">Intermediate</span>
+                            <span class="course-duration">6 Weeks</span>
+                        </div>
+                        <p>Build cross-platform mobile applications for iOS and Android.</p>
+                        <div class="course-footer">
+                            <span class="course-price">$89</span>
+                            <button class="btn-secondary">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="assets/images/courses/course-03.jpg" alt="Course 3">
+                    </div>
+                    <div class="course-content">
+                        <h3>Cloud Computing with AWS</h3>
+                        <div class="course-meta">
+                            <span class="course-level">Advanced</span>
+                            <span class="course-duration">10 Weeks</span>
+                        </div>
+                        <p>Deploy and manage scalable cloud applications on AWS infrastructure.</p>
+                        <div class="course-footer">
+                            <span class="course-price">$129</span>
+                            <button class="btn-secondary">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="assets/images/courses/course-04.jpg" alt="Course 4">
+                    </div>
+                    <div class="course-content">
+                        <h3>Data Science Masterclass</h3>
+                        <div class="course-meta">
+                            <span class="course-level">Advanced</span>
+                            <span class="course-duration">12 Weeks</span>
+                        </div>
+                        <p>Learn data analysis, visualization, and machine learning techniques.</p>
+                        <div class="course-footer">
+                            <span class="course-price">$149</span>
+                            <button class="btn-secondary">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Education Street, Tech City, TC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>support@unify.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📱</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+234 70 4503 3528</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Modal -->
+    <div class="modal" id="applyModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h2>Apply to UNIFY</h2>
+            <form id="applyForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Your Interest</option>
+                    <option value="web">Web Development</option>
+                    <option value="mobile">Mobile Development</option>
+                    <option value="data">Data Science</option>
+                    <option value="business">Business</option>
+                    <option value="design">Design</option>
+                </select>
+                <textarea placeholder="Tell us about yourself" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Submit Application</button>
+            </form>
         </div>
     </div>
-    <div class="section0ne">
-        <!-- <video autoplay muted loop id="bg-video">
-            <source src="./course-video.mp4" type="video/mp4" />
-        </video> -->
 
-        <div class="first-body">
-            <h4>HELLO!</h4>
-            <h1>WELCOME TO UNIFY</h1>
-            <p>This is an edu meeting HTML CSS template provided by <a href="https://templatemo.com"
-                    target="_blank">TemplateMo website</a>. This is a Bootstrap
-                v5.1.3 layout. The video background is taken from Pexels website, a group of young people by <a
-                    href="https://Pressmaster" target="_blank">Pressmaster</a>.</p>
-            <div class="subred"><input type="submit" value="JOIN US NOW!"></div>
-        </div>
-    </div>
-
-
-
-    <!-- <div class="owl-stage" -->
-        <!-- style="transform: translate3d(-1910px, 0px, 0px); transition: all 0.25s ease 0s; width: 4202px;"> -->
-    <!-- </div> -->
-
-    <div class="baanner">
-        <div class="baanner1">
-            <div class="owl-item active" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-03.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Best Students</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UNIFY</h3>
+                    <p>Connecting educators, students, and professionals worldwide through quality online education.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#meetings">Meetings</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="owl-item active" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-02.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Online Meeting</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-item active" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-03.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Best Networking</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-            <div><!-- <div class="owl-item cloned" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="./service-icon-03.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Best Students</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-item cloned" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-02.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Online Meeting</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-item cloned" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-03.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Best Networking</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-item" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-01.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Best Education</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-item" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-02.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Best Teachers</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-item cloned" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-01.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Best Education</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-item cloned" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-02.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Best Teachers</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-item cloned" style="width: 352px; ">
-                <div class="item">
-                    <div class="icon">
-                        <img src="service-icon-03.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Best Students</h4>
-                        <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-                    </div>
-                </div>
-            </div> --></div>
-        </div>
-        <div class="upcoming-meetings">
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <h2 class="center">UPCOMING MEETINGS</h2><br>
-            <hr class="hr"><br><br>    
-            <div class="meetings-schedule">
-                <div class="schedule schedule-1">
-
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Stack-dev. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
-    </div>
+    </footer>
 
-
-
+    <script src="js/script.js"></script>
 </body>
-<script src="index.js"></script>
-<script src="index1.js"></script>
-
-
 
 </html>
